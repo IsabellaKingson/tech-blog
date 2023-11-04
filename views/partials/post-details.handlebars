@@ -1,0 +1,13 @@
+<div>
+  <div>
+    <h3><a href="/posts/{{id}}">{{title}}</a></h3>
+    <p>By: {{user.username}}</p>
+  </div>
+  <div>
+    <p>{{content}}</p>
+  </div>
+  <div>From {{date_created}}</div>
+  <div><input id="new-comment" type="text" /></div>
+  <button type="submit" id="comment-btn" post-id="{{id}}">Comment</button>
+</div>
+<script src="/js/comment.js"></script>

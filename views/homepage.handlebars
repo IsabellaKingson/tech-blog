@@ -1,0 +1,21 @@
+{{#if logged_in}}
+<h2>New Post:</h2>
+<div>
+    <div>
+        <label for="new-post-title"><h3>Title:</h3></label>
+        <input type="text" id="new-post-title"/>
+    </div>
+    <div>
+        <label for="new-post-content"><p>Your Post:</p></label>
+        <input type="textarea" id="new-post-content"/>
+    </div>
+    <div><button type="submit">Post</button></div>
+</div>
+{{/if}}
+{{#each posts as |post|}}
+{{> post-details post}}
+{{/each}}
+
+{{#if logged_in}}
+<script src="/js/homepage.js"></script>
+{{/if}}

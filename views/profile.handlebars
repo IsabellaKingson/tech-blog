@@ -1,0 +1,11 @@
+<div>
+    <h2>{{username}}</h2>
+</div>
+{{#if posts.length}}
+<div>
+    <h3>Your Posts:</h3>
+</div>
+{{#each posts as |post|}}
+{{> post-details}}
+{{/each}}
+{{/if}}
